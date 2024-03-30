@@ -57,7 +57,7 @@ closebutton.Activated:Connect(OnPressed)
 local Players = game:GetService('Players')
 local UIS = game:GetService("UserInputService")
 
-local UI = closebutton
+local UI = frame
 
 local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
