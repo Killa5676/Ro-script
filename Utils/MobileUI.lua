@@ -52,6 +52,12 @@ local function OnPressed()
     input.press(Enum.KeyCode.LeftControl)
 end
 
+local function onKeyPress(input)
+    if input.KeyCode == Enum.KeyCode.P then
+        screenGui:Destroy()
+    end
+end
+
 closebutton.Activated:Connect(OnPressed)
 
 local Players = game:GetService('Players')
@@ -108,3 +114,5 @@ UIS.InputEnded:Connect(function(input)
         Holding = false
     end
 end)
+
+UIS.InputBegan:Connect(onKeyPress)
