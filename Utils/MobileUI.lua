@@ -1,5 +1,10 @@
+if game:GetService("CoreGui"):FindFirstChild("Ro-Script Mobile Button") then
+   game:GetService("CoreGui"):FindFirstChild("Ro-Script Mobile Button"):Destroy()
+end
+
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = game:GetService("CoreGui")
+screenGui.Name = "Ro-Script Mobile Button"
 
 local frame = Instance.new("Frame")
 frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
