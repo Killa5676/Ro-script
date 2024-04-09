@@ -21,4 +21,6 @@ task.spawn(antiafk)
 
 if game.PlaceId == 16510724413 then
    webImport("PetCatchers")
+elseif game.PlaceId == 16953799253 then
+   webImport("PlayerRng")
 end
