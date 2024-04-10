@@ -6,7 +6,7 @@
 local owner = "Killa5676"
 local branch = "master"
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Killa5676/Ro-script/master/Utils/Key%20System%20fix.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Killa5676/Ro-script/master/Utils/Key%20System%20fix.lua"))() -- essential key system fix 04/10/2024
 
 local function antiafk()
 local VirtualUser = game:GetService("VirtualUser")
