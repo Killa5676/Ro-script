@@ -28,4 +28,6 @@ if game.PlaceId == 16510724413 then
    webImport("PetCatchers")
 elseif game.PlaceId == 16953799253 then
    webImport("PlayerRng")
+elseif game.PlaceId == 16524008257 then
+  webImport("AnimeRng")
 end
