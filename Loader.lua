@@ -7,9 +7,12 @@ local owner = "Killa5676"
 local branch = "master"
 
 local function antiafk()
-    for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
-        v:Disable()
-    end
+local VirtualUser = game:GetService("VirtualUser")
+local plr = game.Players.LocalPlayer
+    plr.Idled:Connect(function()
+        VirtualUser:CaptureController()
+        VirtualUser:ClickButton2(Vector2.new())
+    end)
 end
 
 local function webImport(file)
