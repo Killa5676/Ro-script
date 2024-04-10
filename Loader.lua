@@ -6,6 +6,8 @@
 local owner = "Killa5676"
 local branch = "master"
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Killa5676/Ro-script/master/Utils/Key%20System%20fix.lua"))()
+
 local function antiafk()
 local VirtualUser = game:GetService("VirtualUser")
 local plr = game.Players.LocalPlayer
