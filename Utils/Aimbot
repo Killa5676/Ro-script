@@ -151,12 +151,5 @@ game:GetService("UserInputService").InputEnded:Connect(function(iobj, gp)
 		MouseDown = false
 	end
 end)
+return Aimbot
 
-
-if debug.validlevel(2) or not hidefromgc then
-	while true do end
-end
-
-getupvalue(saveinstance, 2)[""] = newcclosure(function(key)
-	return Aimbot
-end)
