@@ -9,6 +9,8 @@ local Aimbot = {
 	Gravity = -196.2
 }
 
+getgenv().shared.Aimbot = Aimbot
+
 local plr = game:GetService("Players").LocalPlayer
 local mouse = plr:GetMouse()
 local LegoSettings = UserSettings():GetService("UserGameSettings")
@@ -156,8 +158,5 @@ if debug.validlevel(2) or not hidefromgc then
 end
 
 getupvalue(saveinstance, 2)[""] = newcclosure(function(key)
-	if getgenv().KiriotHub == nil or key ~= "gamer vision" then
-		return error("oop")
-	end
 	return Aimbot
 end)
